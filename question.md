@@ -1,5 +1,6 @@
 \*\*Avoid memory leaks in large Reactjs applications
-Nnững cách để tránh rò rỉ bộ nhớ trong các ứng dụng React lớn:
+
+Những cách để tránh rò rỉ bộ nhớ trong các ứng dụng React lớn:
 
 1. Dọn dẹp hiệu ứng (useEffect)
 2. Hủy bỏ các thao tác bất đồng bộ
