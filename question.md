@@ -1,6 +1,6 @@
 \*\*Avoid memory leaks in large Reactjs applications
 
-<!-- Những cách để tránh rò rỉ bộ nhớ trong các ứng dụng React lớn: chi ong lau lau -->
+Những cách để tránh rò rỉ bộ nhớ trong các ứng dụng React lớn:
 
 1. Dọn dẹp hiệu ứng (useEffect)
    Sử dụng hàm dọn dẹp (cleanup function) trong useEffect để hủy bỏ các subscription hoặc các tác vụ không đồng bộ khi component bị unmount.
