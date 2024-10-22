@@ -1,6 +1,6 @@
 \*\*Avoid memory leaks in large Reactjs applications
 
-<!-- Những cách để tránh rò rỉ bộ nhớ trong các ứng dụng React lớn: chi ong lau lau -->
+Những cách để tránh rò rỉ bộ nhớ trong các ứng dụng React lớn:
 
 0. init status : khoi tao
 1. Dọn dẹp hiệu ứng (useEffect)
@@ -137,5 +137,3 @@ Ví dụ: 1vh = 1% chiều cao của viewport. 5. %:
 
 Đơn vị này dựa trên kích thước của phần tử cha.
 Ví dụ: Nếu phần tử cha có chiều rộng là 100px, thì 50% = 50px.
-
-dDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDdd
