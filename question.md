@@ -109,3 +109,35 @@ bạn sẽ xử lý việc phân phối nội dung theo thời gian thực như 
 
 2. Lưu trữ tạm thời các tin nhắn chưa gửi
    Bạn có thể lưu trữ tạm thời các tin nhắn chưa gửi trong local storage hoặc state của ứng dụng và gửi lại chúng khi kết nối được khôi phục.
+
+How would you implement authentication in real-time chat app?
+Bạn sẽ triển khai xác thực trong ứng dụng trò chuyện thời gian thực như thế nào?
+
+JWT
+
+
+**CSS: What is your strategy when implement a responsive web design (Mobile first vs Desktop first)?
+CSS: Chiến lược của bạn khi triển khai thiết kế web đáp ứng (Di động trước và Máy tính để bàn trước) là gì?
+
+
+** Sự khác biệt giữa các đơn vị em, rem, vw, vh và %:
+1. em:
+
+Đơn vị này dựa trên kích thước font của phần tử cha gần nhất.
+Ví dụ: Nếu phần tử cha có font-size là 16px, thì 1em = 16px.
+2. rem:
+
+Đơn vị này dựa trên kích thước font của phần tử gốc (root element), thường là <html>.
+Ví dụ: Nếu <html> có font-size là 16px, thì 1rem = 16px.
+3. vw:
+
+Đơn vị này dựa trên 1% của chiều rộng viewport (khung nhìn).
+Ví dụ: 1vw = 1% chiều rộng của viewport.
+4. vh:
+
+Đơn vị này dựa trên 1% của chiều cao viewport.
+Ví dụ: 1vh = 1% chiều cao của viewport.
+5. %:
+
+Đơn vị này dựa trên kích thước của phần tử cha.
+Ví dụ: Nếu phần tử cha có chiều rộng là 100px, thì 50% = 50px.
