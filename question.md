@@ -2,6 +2,7 @@
 
 Những cách để tránh rò rỉ bộ nhớ trong các ứng dụng React lớn:
 
+0. init status : khoi tao
 1. Dọn dẹp hiệu ứng (useEffect)
    Sử dụng hàm dọn dẹp (cleanup function) trong useEffect để hủy bỏ các subscription hoặc các tác vụ không đồng bộ khi component bị unmount.
 2. Hủy bỏ các timer:
