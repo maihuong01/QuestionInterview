@@ -172,3 +172,6 @@ cookie: Lưu trữ với dung lượng nhỏ, thường dùng cho truyền dữ 
 \*\*Biến môi trường trong React có thể được truy cập từ trình duyệt sau khi build ứng dụng.
 Không nên lưu trữ thông tin nhạy cảm trong các biến môi trường này.
 Sử dụng biến môi trường để cấu hình các giá trị không nhạy cảm trong ứng dụng của bạn.
+
+\*\*Backend: Redis và Memcached là hai lựa chọn phổ biến để cache dữ liệu phía backend.
+\*\*Frontend: React Query và Apollo Client là hai thư viện phổ biến để quản lý và cache dữ liệu phía frontend.
