@@ -115,29 +115,60 @@ Bạn sẽ triển khai xác thực trong ứng dụng trò chuyện thời gian
 
 JWT
 
-
-**CSS: What is your strategy when implement a responsive web design (Mobile first vs Desktop first)?
+\*\*CSS: What is your strategy when implement a responsive web design (Mobile first vs Desktop first)?
 CSS: Chiến lược của bạn khi triển khai thiết kế web đáp ứng (Di động trước và Máy tính để bàn trước) là gì?
 
+\*\* Sự khác biệt giữa các đơn vị em, rem, vw, vh và %:
 
-** Sự khác biệt giữa các đơn vị em, rem, vw, vh và %:
 1. em:
 
 Đơn vị này dựa trên kích thước font của phần tử cha gần nhất.
-Ví dụ: Nếu phần tử cha có font-size là 16px, thì 1em = 16px.
-2. rem:
+Ví dụ: Nếu phần tử cha có font-size là 16px, thì 1em = 16px. 2. rem:
 
 Đơn vị này dựa trên kích thước font của phần tử gốc (root element), thường là <html>.
-Ví dụ: Nếu <html> có font-size là 16px, thì 1rem = 16px.
-3. vw:
+Ví dụ: Nếu <html> có font-size là 16px, thì 1rem = 16px. 3. vw:
 
 Đơn vị này dựa trên 1% của chiều rộng viewport (khung nhìn).
-Ví dụ: 1vw = 1% chiều rộng của viewport.
-4. vh:
+Ví dụ: 1vw = 1% chiều rộng của viewport. 4. vh:
 
 Đơn vị này dựa trên 1% của chiều cao viewport.
-Ví dụ: 1vh = 1% chiều cao của viewport.
-5. %:
+Ví dụ: 1vh = 1% chiều cao của viewport. 5. %:
 
-<!-- Đơn vị này dựa trên kích thước của phần tử cha. -->
-<!-- Ví dụ: Nếu phần tử cha có chiều rộng là 100px, thì 50% = 50px. -->
+Đơn vị này dựa trên kích thước của phần tử cha. -->
+Ví dụ: Nếu phần tử cha có chiều rộng là 100px, thì 50% = 50px.
+
+\*\*cách chia layout trong MUI
+Tạo một Container để bọc toàn bộ layout.
+Sử dụng Grid để chia layout thành các phần khác nhau.
+Sử dụng Box để thêm các thành phần con và tùy chỉnh giao diện.
+
+\*\*dùng Box, Container trong MUI khác gì với div thông thường
+Box nó có sẵn các prop đi kèm để có thể css nhanh hơn ví dụ
+
+\*\* Trong HTML5 sẽ dùng thẻ main để bọc cả nội dung của ứng dụng, giúp cải thiện khả năng truy cập và SEO.
+Thẻ <main> được thiết kế để chứa nội dung chính của tài liệu HTML và chỉ nên xuất hiện một lần trong mỗi trang
+
+\*\*lifecycle class compnent Reactjs
+
+1. Constructor: Khởi tạo state và props
+2. componentDidMount: Được gọi sau khi component được render lần đầu tiên, thường dùng để gọi API hoặc thiết lập các subscription.
+3. shouldComponentUpdate: Quyết định xem component có nên re-render hay không, trả về true hoặc false.
+   // Trả về true để cho phép re-render
+4. componentDidUpdate: Được gọi sau khi component được cập nhật, thường dùng để cập nhật DOM hoặc gọi API dựa trên state mới.
+5. componentWillUnmount: Được gọi ngay trước khi component bị unmount và destroy
+
+\*\* 3 state khác nhau nếu chạy state thì chỉ render view 1 lần
+
+\*\* React.memo là một Higher Order Component (HOC)
+React.memo nhận vào hai đối số: Component và Hàm so sánh tùy chỉnh
+
+\*\* Store của Redux được lưu trữ trong bộ nhớ của ứng dụng JavaScript. Nó không được lưu trữ trên máy chủ hoặc trong cơ sở dữ liệu, mà tồn tại trong bộ nhớ của trình duyệt khi ứng dụng đang chạy. Store là một đối tượng JavaScript chứa toàn bộ state của ứng dụng và chỉ có thể được thay đổi thông qua các actions.
+
+\*\* phân biệt localStorage, sessionStorage, cookie
+localStorage: Lưu trữ dài hạn, không mất khi đóng trình duyệt.
+sessionStorage: Lưu trữ ngắn hạn, mất khi đóng tab.
+cookie: Lưu trữ với dung lượng nhỏ, thường dùng cho truyền dữ liệu giữa client và server.
+
+\*\*Biến môi trường trong React có thể được truy cập từ trình duyệt sau khi build ứng dụng.
+Không nên lưu trữ thông tin nhạy cảm trong các biến môi trường này.
+Sử dụng biến môi trường để cấu hình các giá trị không nhạy cảm trong ứng dụng của bạn.
