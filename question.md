@@ -175,3 +175,20 @@ Sử dụng biến môi trường để cấu hình các giá trị không nhạ
 
 \*\*Backend: Redis và Memcached là hai lựa chọn phổ biến để cache dữ liệu phía backend.
 \*\*Frontend: React Query và Apollo Client là hai thư viện phổ biến để quản lý và cache dữ liệu phía frontend.
+
+\*\*Generator functions
+Tạo ra các chuỗi giá trị: Dễ dàng tạo ra các chuỗi giá trị theo logic tùy ý.
+Tạm dừng và tiếp tục thực thi: Quản lý trạng thái phức tạp và thực hiện các tác vụ không đồng bộ.
+Quản lý bộ nhớ hiệu quả: Tiết kiệm bộ nhớ khi làm việc với các tập dữ liệu lớn hoặc vô hạn.
+Xử lý các tác vụ không đồng bộ: Quản lý các tác vụ không đồng bộ một cách tuần tự.
+Triển khai các thuật toán phức tạp: Hữu ích trong việc triển khai các thuật toán phức tạp.
+Tạo ra các iterator tùy chỉnh: Dễ dàng lặp qua các cấu trúc dữ liệu phức tạp.
+
+\*\*sử dụng async/await thường là cách tốt nhất để xử lý các Promise phụ thuộc lẫn nhau. Nó giúp mã dễ đọc hơn và tránh lồng ghép phức tạp.
+có thể sử dụng Promise.all để chạy các promise song song nếu chúng không phụ thuộc lẫn nhau. Tuy nhiên, nếu các promise phải chờ nhau, bạn vẫn nên sử dụng async/await để tránh "promise hell".
+
+\*\* Sử dụng cookie để lưu trữ thông tin bí mật không phải là lựa chọn tốt nhất do các vấn đề về bảo mật, giới hạn kích thước, hiệu suất và quản lý phức tạp. Thay vào đó, nên sử dụng các phương pháp lưu trữ và truyền thông tin an toàn hơn như JWT, HTTP headers, hoặc localStorage với các biện pháp bảo mật bổ sung.
+
+\*\* cơ chế lưu trữ bảo mật lưu data vào đâu thì đảm bảo an toàn
+
+bạn nên sử dụng các cơ chế lưu trữ bảo mật như HttpOnly cookies, mã hóa dữ liệu trước khi lưu trữ trong localStorage, sử dụng secure storage trên mobile, sử dụng cơ sở dữ liệu mã hóa, và lưu trữ dữ liệu nhạy cảm trên server.
