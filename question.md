@@ -214,3 +214,5 @@ bạn nên sử dụng các cơ chế lưu trữ bảo mật như HttpOnly cooki
 takeLatest: Chỉ chạy saga cho hành động mới nhất, hủy bỏ các saga từ các hành động trước đó nếu chúng chưa hoàn thành.
 
 \*\*Trong TypeScript, decorator function là một tính năng mạnh mẽ cho phép bạn bổ sung hành vi hoặc thông tin vào các class, method, property, hoặc accessor mà không làm thay đổi cấu trúc cơ bản của chúng. Decorator được sử dụng rộng rãi để tăng khả năng tái sử dụng và làm cho mã nguồn dễ bảo trì hơn.
+
+\*\*prototype là một công cụ mạnh mẽ để chia sẻ thuộc tính và phương thức giữa các đối tượng cùng loại, tiết kiệm bộ nhớ và tăng hiệu suất của ứng dụng JavaScript.
