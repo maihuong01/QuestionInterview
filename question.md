@@ -121,21 +121,25 @@ CSS: Chiến lược của bạn khi triển khai thiết kế web đáp ứng (
 \*\* Sự khác biệt giữa các đơn vị em, rem, vw, vh và %:
 
 1. em:
+   Đơn vị này dựa trên kích thước font của phần tử cha gần nhất.
+   Ví dụ: Nếu phần tử cha có font-size là 16px, thì 1em = 16px.
 
-Đơn vị này dựa trên kích thước font của phần tử cha gần nhất.
-Ví dụ: Nếu phần tử cha có font-size là 16px, thì 1em = 16px. 2. rem:
+2. rem:
+   Đơn vị này dựa trên kích thước font của phần tử gốc (root element), thường là <html>.
+   rem giúp thiết kế giao diện linh hoạt và thích ứng tốt hơn với các cài đặt phóng to/thu nhỏ của trình duyệt.
+   Ví dụ: Nếu <html> có font-size là 16px, thì 1rem = 16px.
 
-Đơn vị này dựa trên kích thước font của phần tử gốc (root element), thường là <html>.
-Ví dụ: Nếu <html> có font-size là 16px, thì 1rem = 16px. 3. vw:
+3. vw:
+   Đơn vị này dựa trên 1% của chiều rộng viewport (khung nhìn).
+   Ví dụ: 1vw = 1% chiều rộng của viewport.
 
-Đơn vị này dựa trên 1% của chiều rộng viewport (khung nhìn).
-Ví dụ: 1vw = 1% chiều rộng của viewport. 4. vh:
+4. vh:
+   Đơn vị này dựa trên 1% của chiều cao viewport.
+   Ví dụ: 1vh = 1% chiều cao của viewport.
 
-Đơn vị này dựa trên 1% của chiều cao viewport.
-Ví dụ: 1vh = 1% chiều cao của viewport. 5. %:
-
-Đơn vị này dựa trên kích thước của phần tử cha. -->
-Ví dụ: Nếu phần tử cha có chiều rộng là 100px, thì 50% = 50px.
+5. %:
+   Đơn vị này dựa trên kích thước của phần tử cha. -->
+   Ví dụ: Nếu phần tử cha có chiều rộng là 100px, thì 50% = 50px.
 
 \*\*cách chia layout trong MUI
 Tạo một Container để bọc toàn bộ layout.
@@ -208,3 +212,5 @@ bạn nên sử dụng các cơ chế lưu trữ bảo mật như HttpOnly cooki
 
 \*\* takeEvery: Chạy tất cả các saga cho mỗi hành động được phát ra.
 takeLatest: Chỉ chạy saga cho hành động mới nhất, hủy bỏ các saga từ các hành động trước đó nếu chúng chưa hoàn thành.
+
+\*\*Trong TypeScript, decorator function là một tính năng mạnh mẽ cho phép bạn bổ sung hành vi hoặc thông tin vào các class, method, property, hoặc accessor mà không làm thay đổi cấu trúc cơ bản của chúng. Decorator được sử dụng rộng rãi để tăng khả năng tái sử dụng và làm cho mã nguồn dễ bảo trì hơn.
