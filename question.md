@@ -144,6 +144,19 @@ Sử dụng Box để thêm các thành phần con và tùy chỉnh giao diện.
 
 \*\*dùng Box, Container trong MUI khác gì với div thông thường
 Box nó có sẵn các prop đi kèm để có thể css nhanh hơn ví dụ
+Styling:
+Box và Container cung cấp các props để dễ dàng áp dụng các style như margin, padding, display, flex, grid, v.v. mà không cần phải viết CSS riêng.
+div thông thường yêu cầu bạn phải viết CSS hoặc sử dụng inline styles để áp dụng các style.
+Responsiveness:
+Container có các props như maxWidth, fixed, disableGutters để dễ dàng tạo layout responsive.
+div thông thường không có các tính năng này và bạn phải tự viết CSS media queries.
+Theming:
+Box và Container tích hợp với hệ thống theming của MUI, cho phép bạn sử dụng các giá trị từ theme như spacing, palette, typography, v.v.
+div thông thường không có tích hợp này và bạn phải tự quản lý theme.
+Utility Props:
+Box cung cấp nhiều utility props như m (margin), p (padding), bgcolor, color, border, v.v. để dễ dàng áp dụng các style.
+div thông thường không có các utility props này.
+\*\* Stack trong mui để xếp phần tử theo dọc và Stack ngang được viết theo flex box
 
 \*\* Trong HTML5 sẽ dùng thẻ main để bọc cả nội dung của ứng dụng, giúp cải thiện khả năng truy cập và SEO.
 Thẻ <main> được thiết kế để chứa nội dung chính của tài liệu HTML và chỉ nên xuất hiện một lần trong mỗi trang
@@ -157,7 +170,7 @@ Thẻ <main> được thiết kế để chứa nội dung chính của tài li�
 4. componentDidUpdate: Được gọi sau khi component được cập nhật, thường dùng để cập nhật DOM hoặc gọi API dựa trên state mới.
 5. componentWillUnmount: Được gọi ngay trước khi component bị unmount và destroy
 
-\*\* 3 state khác nhau nếu chạy state thì chỉ render view 1 lần
+\*\* 3 state khác nhau nếu chạy setState thì chỉ render view 1 lần
 
 \*\* React.memo là một Higher Order Component (HOC)
 React.memo nhận vào hai đối số: Component và Hàm so sánh tùy chỉnh
@@ -192,3 +205,6 @@ có thể sử dụng Promise.all để chạy các promise song song nếu chú
 \*\* cơ chế lưu trữ bảo mật lưu data vào đâu thì đảm bảo an toàn
 
 bạn nên sử dụng các cơ chế lưu trữ bảo mật như HttpOnly cookies, mã hóa dữ liệu trước khi lưu trữ trong localStorage, sử dụng secure storage trên mobile, sử dụng cơ sở dữ liệu mã hóa, và lưu trữ dữ liệu nhạy cảm trên server.
+
+\*\* takeEvery: Chạy tất cả các saga cho mỗi hành động được phát ra.
+takeLatest: Chỉ chạy saga cho hành động mới nhất, hủy bỏ các saga từ các hành động trước đó nếu chúng chưa hoàn thành.
