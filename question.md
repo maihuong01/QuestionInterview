@@ -192,3 +192,13 @@ có thể sử dụng Promise.all để chạy các promise song song nếu chú
 \*\* cơ chế lưu trữ bảo mật lưu data vào đâu thì đảm bảo an toàn
 
 bạn nên sử dụng các cơ chế lưu trữ bảo mật như HttpOnly cookies, mã hóa dữ liệu trước khi lưu trữ trong localStorage, sử dụng secure storage trên mobile, sử dụng cơ sở dữ liệu mã hóa, và lưu trữ dữ liệu nhạy cảm trên server.
+
+\*\*Dãy số Fibonacci là một chuỗi các số tự nhiên bắt đầu bằng 0 và 1, trong đó mỗi số tiếp theo là tổng của hai số trước đó. Dãy số này thường được định nghĩa như sau:
+
+0,1,1,2,3,5,8,13,21,34,…
+Công thức tổng quát để tính số Fibonacci thứ n là:
+
+F(n)=F(n−1)+F(n−2)
+với điều kiện khởi tạo:
+
+F(0)=0,F(1)=1
